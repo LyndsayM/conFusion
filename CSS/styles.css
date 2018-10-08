@@ -148,12 +148,16 @@
   position: absolute;
   left: 300px;
 }
-
-#carouselButtons {
+#carousel-button {
   right:0px;
   position: absolute;
   bottom: 0px;
-}
+} 
+/* #carouselButtons {
+  right:0px;
+  position: absolute;
+  bottom: 0px;
+} */
 .row-modal-footer{
     padding-bottom: 1cm;
 }
