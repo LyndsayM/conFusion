@@ -149,6 +149,11 @@
   left: 300px;
 }
 
+#carouselButtons {
+  right:0px;
+  position: absolute;
+  bottom: 0px;
+}
 .row-modal-footer{
     padding-bottom: 1cm;
 }

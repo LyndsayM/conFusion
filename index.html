@@ -211,11 +211,8 @@
                                     <span class="badge badge-danger">NEW</span>
                                 </h2>
                                 <p class="hidden-md-down">Featuring mouthwatering combinations with a choice of five different
-                                    salads,
-                                    six
-                                    enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and
-                                    soft drinks. All
-                                    for just $19.99 per person </p>
+                                    salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and
+                                    soft drinks. All for just $19.99 per person </p>
                             </div>
                         </div>
                         <!--Carousel item #3  -->
@@ -245,6 +242,16 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+    
                 </div>
             </div>
         </div>
@@ -355,7 +362,17 @@
  <script src="node_modules/jquery/dist/jquery.min.js"></script>
  <script src="node_modules/tether/dist/js/tether.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
- 
+ <script>
+    $(document).ready(function(){
+        $("#mycarousel").carousel( { interval: 2000 } );
+        $("#carousel-pause").click(function(){
+            $("#mycarousel").carousel('pause');
+        });
+        $("#carousel-play").click(function(){
+            $("#mycarousel").carousel('cycle');
+        });
+    });
+</script>
 
 </body>
 
