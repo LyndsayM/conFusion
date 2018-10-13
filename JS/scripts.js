@@ -1,4 +1,4 @@
-<script>
+    // carousel
     $(document).ready(function(){
         $("#carousel-button").click(function(){
     if ($("#carousel-button").children("span").hasClass('fa-pause')) 
@@ -13,5 +13,17 @@
         $("#carousel-button").children("span").addClass('fa-pause'); 
     }
 })
+//reserve button
+$('#reserveButton').click(function(){
+    $('#reserveModal').modal('toggle');
+      });
+
+//login button   
+$('#loginButton').click(function(){
+$('#loginModal').modal('toggle');
+});
     });
-</script>
+
+
+
+

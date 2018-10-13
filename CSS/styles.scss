@@ -72,3 +72,22 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+// modal-header
+.modal-header{
+    background: $background-dark;
+       color:floralwhite;
+       button{
+           color: floralwhite;
+       }
+}
+
+// modal-body
+.modal-body {
+    background: $background-pale;
+}
+
+// modal-footer
+.modal-footer {
+    background: $background-light;
+}
